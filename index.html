@@ -9,6 +9,26 @@
 <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 </head>
 <script>
+<script type="text/javascript" src="js/jquery-1.7.min.js"></script>
+<script>
+$(function() {
+	// 悬浮窗口
+	$(".yb_conct").hover(function() {
+		$(".yb_conct").css("right", "5px");
+		$(".yb_bar .yb_ercode").css('height', '200px');
+	}, function() {
+		$(".yb_conct").css("right", "-127px");
+		$(".yb_bar .yb_ercode").css('height', '53px');
+	});
+	// 返回顶部
+	$(".yb_top").click(function() {
+		$("html,body").animate({
+			'scrollTop': '0px'
+		}, 300)
+	});
+});
+</script>
+
    /*---------返回顶部----------*/
    $(function() {
 	    $(".btn_top").hide();
