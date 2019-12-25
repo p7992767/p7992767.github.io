@@ -1,11 +1,47 @@
-<a href="tel:+18790853577">点击拨打</a>
-<a href="https://sm.ms/image/h3e9DBV57KZX1d8" target="_blank"><img src="https://i.loli.net/2019/12/25/h3e9DBV57KZX1d8.jpg" /></a>
-<a href="https://sm.ms/image/UMRLEDpJymr9jNh" target="_blank"><img src="https://i.loli.net/2019/12/25/UMRLEDpJymr9jNh.jpg" /></a>
-<a href="https://sm.ms/image/mwXrOsogMFnH4YC" target="_blank"><img src="https://i.loli.net/2019/12/25/mwXrOsogMFnH4YC.jpg" /></a>
-<a href="https://sm.ms/image/bzvIBSi4ec3ygVm" target="_blank"><img src="https://i.loli.net/2019/12/25/bzvIBSi4ec3ygVm.jpg" /></a>
-<a href="https://sm.ms/image/7dfN9vV1wcrWAI8" target="_blank"><img src="https://i.loli.net/2019/12/25/7dfN9vV1wcrWAI8.jpg" /></a>
-<a href="https://sm.ms/image/SyJ8DP9pZXiIdkE" target="_blank"><img src="https://i.loli.net/2019/12/25/SyJ8DP9pZXiIdkE.jpg" /></a>
-<a href="https://sm.ms/image/Iw8RPj5kJqGMQaX" target="_blank"><img src="https://i.loli.net/2019/12/25/Iw8RPj5kJqGMQaX.jpg" /></a>
-<a href="https://sm.ms/image/2lOHihAFuIajqn3" target="_blank"><img src="https://i.loli.net/2019/12/25/2lOHihAFuIajqn3.jpg" /></a>
-<a href="https://sm.ms/image/3ACekP5nJlWdgSq" target="_blank"><img src="https://i.loli.net/2019/12/25/3ACekP5nJlWdgSq.jpg" /></a>
-<a href="https://sm.ms/image/ubsWwvJdyCTAtOD" target="_blank"><img src="https://i.loli.net/2019/12/25/ubsWwvJdyCTAtOD.jpg" /></a>
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jQuery带返回顶部qq和二维码代码 - 站长素材</title>
+
+<link href="css/style.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+</head>
+<script>
+   /*---------返回顶部----------*/
+   $(function() {
+	    $(".btn_top").hide();
+		$(".btn_top").live("click",function(){
+			$('html, body').animate({scrollTop: 0},300);return false;
+		})
+		$(window).bind('scroll resize',function(){
+			if($(window).scrollTop()<=300){
+				$(".btn_top").hide();
+			}else{
+				$(".btn_top").show();
+			}
+		})
+   })
+	
+   /*---------返回顶部 end----------*/
+</script>
+<body>
+
+
+<!--qq聊天代码部分begin-->
+<div class="izl-rmenu">
+    <a class="consult" target="_blank"><div class="phone" style="display:none;">0592-1234567</div></a>    
+    <a class="cart"><div class="pic"></div></a>   
+    <a href="javascript:void(0)" class="btn_top" style="display: block;"></a>
+</div>
+<a target="_blank"  href="http://wpa.qq.com/msgrd?v=3&uin=123456&site=qq&menu=yes" id="udesk-feedback-tab" class="udesk-feedback-tab-left" style="display: block; background-color: black;"></a>
+<!--qq聊天代码部分end-->
+
+<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+<p>适用浏览器：IE8、360、FireFox、Chrome、Safari、Opera、傲游、搜狗、世界之窗. </p>
+<p>来源：<a href="http://sc.chinaz.com/" target="_blank">站长素材</a></p>
+</div>
+</body>
+</html>
+
